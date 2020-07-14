@@ -1,6 +1,6 @@
 # RequireJS-Tutorial-1
 
-This is the first RequireJS tutorial I took, n so on. 
+This is the first RequireJS tutorial I took, n so on.
 
 ## Source
 
