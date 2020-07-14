@@ -7,10 +7,38 @@
 </head>
 <body>
     <script data-main="js/config" src="node_modules/requirejs/require.js"></script>
+    <script>alert('before require keyword for config.js');</script>
+    
     <script>
+        //alert('before it all after requirejs is loaded whats the variable isItSet: ' + isItSet);
+        // was not set, and causing error for script below it
+       /* if (isItSet === undefined) {
+            alert('isItSet is not defined yet');
+        } else {
+            alert('this is defined');
+        }
+        // it was not defined yet
+        */
+
+        // now require config to run alerts
         require(['config'], function(){
             // all of your code here
-        })
+            alert('after require keyword for config.js');
+            alert ('in the config require the var isItSet: ' + isItSet);
+            // test if it's set now that the require is ran
+            if (isItSet === undefined) {
+                alert('isItSet is not defined yet');
+            } else {
+                alert('it\'s defined now');
+            }
+        });
+        if (isItSet === undefined) {
+            //alert('isItSet is not defined yet');
+        } else {
+            // by here the variable from config.js was set and usable
+            alert('this is defined');
+        }
     </script>
+    
 </body>
 </html>
