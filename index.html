@@ -3,41 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RequireJS Tutorial 1 - Tutorial 1</title>
+    <title>RequireJS Tutorial 1 - Tutorial #</title>
 </head>
 <body>
+    <h1>RequireJS Tutorial 1 - Tutorial #</h1>
+    <p>Follow the reposoitory on <a href="https://github.com/devnetkc/RequireJS-Tutorial-1" title="RequireJS Tutorial 1 GitHub Repository">GitHub</a> to see what's changed.</p>
     <script data-main="js/config" src="node_modules/requirejs/require.js"></script>
-    <script>alert('before require keyword for config.js');</script>
     
     <script>
-        //alert('before it all after requirejs is loaded whats the variable isItSet: ' + isItSet);
-        // was not set, and causing error for script below it
-       /* if (isItSet === undefined) {
-            alert('isItSet is not defined yet');
-        } else {
-            alert('this is defined');
-        }
-        // it was not defined yet
-        */
-
-        // now require config to run alerts
+        // now add in the config dependency requirement
         require(['config'], function(){
-            // all of your code here
-            alert('after require keyword for config.js');
-            alert ('in the config require the var isItSet: ' + isItSet);
-            // test if it's set now that the require is ran
-            if (isItSet === undefined) {
-                alert('isItSet is not defined yet');
-            } else {
-                alert('it\'s defined now');
-            }
+            // all of your code here]
         });
-        if (isItSet === undefined) {
-            //alert('isItSet is not defined yet');
-        } else {
-            // by here the variable from config.js was set and usable
-            alert('this is defined');
-        }
     </script>
     
 </body>
