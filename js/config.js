@@ -30,7 +30,8 @@ requirejs.config({
             'https://ajax.googleapis.com/ajax/libs/mootools/1.6.0/mootools.min.js',
             'lib/mootools.min'
         ],
-        swfObj: 'lib/swfobject' 
+        swfObj: 'lib/swfobject',
+        methods: 'customScripts/methods' 
     }
 
     // forget adding swfobject.js it's freaking FLASH!
