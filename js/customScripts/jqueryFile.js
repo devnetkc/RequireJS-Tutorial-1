@@ -16,8 +16,8 @@ define(
 define([
     'jQuery',
     'methods'
-], function($, methods) {
-    'use strict';
+], function(jQuery, methods) {
+    //'use strict';
     $('#clickMe').click(function() {
         methods.changeHTML('I was clicked');
     });
