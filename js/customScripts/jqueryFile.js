@@ -19,7 +19,7 @@ define([
 ], function(jQuery, methods) {
     //'use strict';
     $('#clickMe').click(function() {
-        methods.changeHTML('I was clicked');
+        methods.changeHTML('#indexOutput', '<p>The BUTTON was clicked</p>');
     });
     
 });
