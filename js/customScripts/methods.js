@@ -14,8 +14,8 @@ function loadMorePosts() {
 define(['jQuery'], function() {
     var methods = {};
 
-    methods.changeHTML = function (arg) {
-        $('body').html(arg);
+    methods.changeHTML = function (arg1, arg2) {
+        $(arg1).html(arg2);
     }
 
     methods.showAlert = function (arg) {
