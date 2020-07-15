@@ -4,6 +4,9 @@
 
 requirejs.config({
     // baseUrl is the parent directory location of the js files to include
+    // This is now an opional line below since this config file is in the js dir already
+    //  baseUrl: 'js',
+    // Let's keep it for now to make it stand out and is good practice to have in place anyways
     baseUrl: 'js',
     // add the path names for the files to add
     paths: {
