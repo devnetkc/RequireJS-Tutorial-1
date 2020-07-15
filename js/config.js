@@ -9,7 +9,7 @@ requirejs.config({
     paths: {
         angular: 'angular.min',
         extCore: 'ext-core',
-        jquery: 'jquery.min',
+        jQuery: 'jquery.min',
         // mootools standard we host the file
         //  mootools: 'mootols.min',
         // mootools use a cdn
