@@ -13,7 +13,7 @@ requirejs.config({
         angular: 'lib/angular.min',
         extCore: 'lib/ext-core',
         jQuery: 'lib/jquery.min',
-        jQueryMobile: 'http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js',
+        jQueryMobile: 'http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min,
         // mootools standard we host the file
         //  mootools: 'lib/mootols.min',
         // mootools use a cdn
@@ -28,7 +28,7 @@ requirejs.config({
         // mootools use a cdn but have backup cdns before defaulting to local copy
         mootools: [
             'https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.min',
-            'https://ajax.googleapis.com/ajax/libs/mootools/1.6.0/mootools.min.js',
+            'https://ajax.googleapis.com/ajax/libs/mootools/1.6.0/mootools.min',
             'lib/mootools.min'
         ],
         swfObj: 'lib/swfobject',
