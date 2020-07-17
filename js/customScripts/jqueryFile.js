@@ -15,11 +15,18 @@ define(
 // New define call to use jQuery functions in custom maner using RequireJS
 define([
     'jQuery',
+    'jQueryMobile',
     'methods'
 ], function(jQuery, methods) {
     //'use strict';
-    $('#clickMe').click(function() {
-        methods.changeHTML('#indexOutput', '<p>The BUTTON was clicked</p>');
+    var clickMe = $('#clickMe'), indexOut = '#indexOutput', valueOut = '<p>the BUTTON was ', closeP = '</p>';
+    
+    clickMe.click(function() {
+        methods.changeHTML(indexOut, valueOut + 'CLICKED' + closeP);
     });
+
+    clickMe.on("tap",function(){
+        methods.changeHTML(indexOut, valueOut + 'TAPPED' + closeP);
+      });
     
 });
