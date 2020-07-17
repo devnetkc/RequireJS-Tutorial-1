@@ -13,7 +13,7 @@ requirejs.config({
         angular: 'lib/angular.min',
         extCore: 'lib/ext-core',
         jQuery: 'lib/jquery.min',
-        jQueryMobile: 'http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min,
+        jQueryMobile: 'http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min',
         // mootools standard we host the file
         //  mootools: 'lib/mootols.min',
         // mootools use a cdn
